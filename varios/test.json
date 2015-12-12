@@ -1,0 +1,128 @@
+
+{
+	"ruta":
+		[
+			{
+				"modulo":1,
+				"preguntas":[
+					{
+						"pregunta":"El principal objetivo de la RRI es: ",
+						"opciones":[
+							{
+								"opcion":"a",
+								"texto":" Otorgar tierras a todos los campesinos",
+								"feedback":"RESPUESTA INCORRECTA-  La RRI busca un acceso integral a la tierra, además del acceso y uso de la tierra,  significa acompañarla de otras acciones que permitan mejorar la calidad de vida de las personas que habían en ella. ",
+								"correcta":false
+							},
+							{
+								"opcion":"b",
+								"texto":"Cerrar las brechas entre el campo colombiano y las ciudades",
+								"feedback":"RESPUESTA CORRECTA- La RRI le debe significar al campo colombiano la oportunidad para desarrollar al máximo su potencial productivo y eliminar la pobreza rural. ",
+								"correcta":true
+							},
+							{
+								"opcion":"c",
+								"texto":"Mejorar la calidad nutricional de los colombianos",
+								"feedback":"RESPUESTA INCORRECTA- La RRI busca un acceso integral a la tierra, además de la construcción de vías terciarias,  significa acompañarla de otras acciones que permitan mejorar la calidad de vida de las personas que habían en ella. ",
+								"correcta":false
+							},
+							{
+								"opcion":"d",
+								"texto":"Crear vías terciarias en todo el territorio nacional. ",
+								"feedback":"RESPUESTA INCORRECTA-",
+								"correcta":false
+							}
+						]
+					},
+					{
+						"pregunta":"Los beneficiarios del fondo de tierras serán campesinos sin tierra, priorizando la mujer cabeza de familia y priorizando a la población desplazada",
+						"opciones":[
+							{
+								"opcion":"verdadero",
+								"texto":"verdadero",
+								"feedback":"RESPUESTA CORRECTA- Los beneficiarios serán seleccionados con la participación de las comunidades locales como garantía de transparencia.  ",
+								"correcta":true
+							},
+							{
+								"opcion":"falso",
+								"texto":"falso",
+								"feedback":"RESPUESTA INCORRECTA- Los beneficiarios del fondo serán las personas en el campo que mayor apoyo requieran para superar sus condiciones de pobreza. Es decir aquellas personas que carezcan de tierra o la tengan de manera insuficiente. ",
+								"correcta":false
+							}
+						]
+					},
+					{
+						"pregunta":"Las acciones en materia de seguridad alimentaria benefician a todos los colombianos.",
+						"opciones":[
+							{
+								"opcion":"verdadero",
+								"texto":"verdadero",
+								"feedback":"RESPUESTA CORRECTA-  En las áreas rurales las acciones en materia de seguridad alimentaria buscan disminuir el hambre y la desnutrición y en las áreas urbanas busca mejorar el acceso a los alimentos. ",
+								"correcta":true
+							},
+							{
+								"opcion":"falso",
+								"texto":"falso",
+								"feedback":"RESPUESTA INCORRECTA-  Las acciones en materia de seguridad alimentaria y en general los acuerdos del punto de desarrollo agrario integral buscan garantizar los derechos de todos los colombianos, dentro de los cuales se incluye los de la alimentación sana, nutritiva y culturalmente apropiada. ",
+								"correcta":false
+							}
+						]
+					}
+
+				],
+				"compartir":"En la ruta de la paz puedes conocer los avances del proceso de conversaciones. Uno de ellos es la Reforma Rural Integral: Hacia un nuevo campo colombiano, por medio de la cual se busca cerrar las brechas de pobreza entre el campo y las áreas urbanas en el país. Para saber como se va a lograr esto descarga el app en xxxxx"
+			},
+			{
+				"modulo":2,
+				"preguntas":[
+					{
+						"pregunta":"¿cuales son los pasos del proceso de paz?",
+						"opciones":[
+							{
+								"opcion":"a",
+								"texto":" A UNO, DOS, TRES",
+								"feedback":"Es correcta!!",
+								"correcta":true
+							},
+							{
+								"opcion":"b",
+								"texto":"B UNO, DOS, TRES",
+								"feedback":"no es correcta!!",
+								"correcta":false
+							},
+							{
+								"opcion":"c",
+								"texto":"C UNO, DOS, TRES",
+								"feedback":"no es correcta!!",
+								"correcta":false
+							}
+						]
+					},
+					{
+						"pregunta":"¿2 pregunta 2?",
+						"opciones":[
+							{
+								"opcion":"a",
+								"texto":" A UNO, DOS, TRES",
+								"feedback":"Es correcta!!",
+								"correcta":true
+							},
+							{
+								"opcion":"b",
+								"texto":"B UNO, DOS, TRES",
+								"feedback":"no es correcta!!",
+								"correcta":false
+							},
+							{
+								"opcion":"c",
+								"texto":"C UNO, DOS, TRES",
+								"feedback":"no es correcta!!",
+								"correcta":false
+							}
+						]
+					}
+				],
+				"compartir":"texto que se debe compartir"
+			}
+		]
+}
