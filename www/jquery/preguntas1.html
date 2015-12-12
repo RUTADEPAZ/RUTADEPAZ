@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Transitions - jQuery Mobile Demos</title>
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,700">
+	<link rel="stylesheet" href="css/themes/default/jquery.mobile-1.4.5.min.css">
+	<link rel="stylesheet" href="_assets/css/jqm-demos.css">
+	<script src="js/jquery.js"></script>
+	<script src="_assets/js/index.js"></script>
+	<script src="js/jquery.mobile-1.4.5.min.js"></script>
+    <script src="https://hammerjs.github.io/dist/hammer.js"></script>
+    
+	<style>
+        table { width:100%; border-spacing: 0; }
+        th { text-align:left; }
+        th h3 { margin:.6em 0 .6em .5em; }
+        th, td { vertical-align:top; border-top:1px solid #eee; padding: 1px 3px; background-color:#fcfcfc; }
+        td .ui-btn { margin:.4em 0 .5em 0; }
+        td .ui-btn-inner { padding: .4em 15px; }
+    </style>
+</head>
+<body>
+<div data-role="page" id="page">
+	<div data-role="header">
+		<h1>Pregunta 1</h1>
+        <div align="center">El principal objetivo de la RRI es:</p></div>
+        
+        
+	</div>
+	<div data-role="content">	
+		<ul data-role="listview">
+			<li><a href="#page2">Página dos</a></li>
+            <li><a href="#page3">Página tres</a></li>
+			<li><a href="#page4">Página cuatro</a></li>
+		</ul>		
+	</div>
+	<div data-role="footer">
+		<h4>Pie de página</h4>
+	</div>
+</div>
+
+<div data-role="page" id="page2">
+	<div data-role="header">
+		<h1>Página dos</h1>
+	</div>
+	<div data-role="content">	
+		Contenido	
+        bla bla bla</p>
+        <a href="#page" data-transition="fade" class="ui-btn ui-corner-all ui-shadow ui-btn-inline">page</a>	
+	</div>
+	<div data-role="footer">
+		<h4>Pie de página</h4>
+	</div>
+</div>
+
+<div data-role="page" id="page3">
+	<div data-role="header">
+		<h1>Página tres</h1>
+	</div>
+	<div data-role="content">	
+		Contenido</p>
+        <a href="#page" data-transition="fade" class="ui-btn ui-corner-all ui-shadow ui-btn-inline">page</a>		
+	</div>
+	<div data-role="footer">
+		<h4>Pie de página</h4>
+	</div>
+</div>
+
+<div data-role="page" id="page4">
+	<div data-role="header">
+		<h1>Página cuatro</h1>
+	</div>
+	<div data-role="content">	
+		Contenido</p>
+        <a href="#page" data-transition="fade" class="ui-btn ui-corner-all ui-shadow ui-btn-inline">page</a>		
+	</div>
+	<div data-role="footer">
+		<h4>Pie de página</h4>
+	</div>
+</div>
+
+</body>
+</html>
