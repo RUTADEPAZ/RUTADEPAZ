@@ -15,7 +15,7 @@
 
     <feature name="Geolocation">
       <param name="android-package" value="org.apache.cordova.GeoBroker"/>
-      <param name="ios-package" value="CDVLocation"/>
+      <param name=" ios-package" value="CDVLocation"/>
     </feature>
 
     <feature name="Device">
