@@ -8,7 +8,8 @@
 	<link rel="stylesheet" href="css/themes/default/jquery.mobile-1.4.5.min.css">
 	<link rel="stylesheet" href="_assets/css/jqm-demos.css">
 	<script src="js/jquery.js"></script>
-	<script src="_assets/js/index.js"></script>
+	<!--script src="_assets/js/index.js"></script-->
+	<script type="text/javascript" src="js/logic.js"></script>
 	<script src="js/jquery.mobile-1.4.5.min.js"></script>
     <script src="https://hammerjs.github.io/dist/hammer.js"></script>
     
@@ -23,21 +24,12 @@
 </head>
 <body>
 <div data-role="page" id="page">
-
 	<div data-role="header">
-		<h1>Pregunta 1</h1>
-        <div align="center">El principal objetivo de la RRI es:
-       </p></div>
-        
-        
-        
-        
+		<h1>Pregunta:</h1>
+        <div id="pregunta" align="center">El principal objetivo de la RRI es:</div>
 	</div>
 	<div data-role="content">	
-		<ul data-role="listview">
-			<li><a href="#page2" data-transition="slide">Página dos</a></li>
-            <li><a href="#page3" data-transition="slide">Página tres</a></li>
-			<li><a href="#page4" data-transition="slide">Página cuatro</a></li>
+		<ul data-role="listview" class="options">
 		</ul>		
 	</div>
 	<div data-role="footer">
@@ -49,10 +41,10 @@
 	<div data-role="header">
 		<h1>Página dos</h1>
 	</div>
-	<div data-role="content">	
-		Contenido	
+	<div class="content" data-role="content">	
+		<p>Contenido	
         bla bla bla</p>
-        <a href="#page" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-inline">Regresar</a>	
+        <a href="javascript:void(1)" class="ui-btn ui-corner-all ui-shadow ui-btn-inline">triqui triqui</a>	
 	</div>
 	<div data-role="footer">
 		<h4>Pie de página</h4>
@@ -65,7 +57,7 @@
 	</div>
 	<div data-role="content">	
 		Contenido</p>
-        <a href="#page" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-inline">regresar</a>		
+        <a href="javascript:void(1)" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-inline">regresar</a>		
 	</div>
 	<div data-role="footer">
 		<h4>Pie de página</h4>
@@ -84,6 +76,22 @@
 		<h4>Pie de página</h4>
 	</div>
 </div>
+
+
+<template id="tmp_question">
+	  <div class="Question">
+	  	<article>
+	  		<header>
+	  			<h2>TItulo</h2>
+	  		</header>
+	  		<ul class="options">
+	  		</ul>
+	  	</article>
+	  </div>
+</template>
+<template id="tmp_option">
+	<li><a href="javascript:void(1)" data-transition="slide" onclick="logic.response(this)" data-option="{}" data-feedback="feedback">Página dos</a></li>
+</template>
 
 </body>
 </html>
