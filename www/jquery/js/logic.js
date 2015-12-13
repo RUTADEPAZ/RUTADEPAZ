@@ -16,14 +16,14 @@ $(function(){
 			$("#preguntas").html("Cargando..");
 			$.support.cors = true
 			$.mobile.allowCrossDomainPages = true
-			alert("Antes de Ajax line 19")
+			//alert("Antes de Ajax line 19")
 			$.ajax({
 				  url: "http://www.danielgranados.net/ruta/test.json",
 				  dataType: "jsonp",
 				  jsonpCallback: "skipking541934132", /* Unique function name */
 				  success: function(data){
-				  	alert("Todo cargo bien")
-				  	alert(JSON.stringify(data))
+				  	//alert("Todo cargo bien")
+				  	//alert(JSON.stringify(data))
 				    /* Do something with data */
 				    logic.data = data;
 					logic.crearPregunta();/* Will alert Hello, world! */ 
@@ -31,7 +31,7 @@ $(function(){
 				        alert(request.responseText);
 				    }
 				});
-			alert("Durante la espera de respuesta de Ajax")
+			//alert("Durante la espera de respuesta de Ajax")
 		},
 		crearPregunta:function(){
 			$("#preguntas").empty();
@@ -49,7 +49,7 @@ $(function(){
 				}
 		},
 		cargarPregunta:function(){
-			alert("en Cargar Line 49")
+			//alert("en Cargar Line 49")
 			if(logic.data.ruta == undefined)
 				logic.cargarPreguntas();
 			else
@@ -118,8 +118,8 @@ $(function(){
 			}
 		}
 	}
-	alert("antes")
+	//alert("antes")
 	logic.cargarPregunta();
-	alert("despues")
+	//alert("despues")
 })
 
