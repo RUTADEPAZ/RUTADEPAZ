@@ -1,4 +1,4 @@
-function onDeviceReady() {
+$(function(){
 	logic = {
 		module: 1,
 		currentQuestion : 0,
@@ -121,8 +121,5 @@ function onDeviceReady() {
 	alert("antes")
 	logic.cargarPregunta();
 	alert("despues")
-}
+})
 
-$(document).ready(function() {
-    document.addEventListener("deviceready", onDeviceReady, true);       
-});
