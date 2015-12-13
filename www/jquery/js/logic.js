@@ -113,7 +113,8 @@ $(function(){
 			}
 		}
 	}
-
+	alert("antes")
 	logic.cargarPregunta();
+	alert("despues")
 })
 
