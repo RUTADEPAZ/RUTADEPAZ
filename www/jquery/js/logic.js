@@ -5,12 +5,23 @@ $(function(){
 		selectedOption: {},
 		data:{},
 		cargarPreguntas:function(){
-			var url = "http://www.danielgranados.net/ruta/test.json";
-			$("#preguntas").html("Cargando..");
+			/*var url = "http://www.danielgranados.net/ruta/test.json";
 			$.getJSON(url,function(data){
 				logic.data = data;
 				logic.crearPregunta();
 			});
+*/
+			$("#preguntas").html("Cargando..");
+			$.ajax({
+				  url: "http://www.danielgranados.net/ruta/test.json",
+				  dataType: "jsonp",
+				  jsonpCallback: "skipking541934132", /* Unique function name */
+				  success: function(data){
+				    /* Do something with data */
+				    logic.data = data;
+					logic.crearPregunta();/* Will alert Hello, world! */ 
+				  }
+				});
 		},
 		crearPregunta:function(){
 			$("#preguntas").empty();
