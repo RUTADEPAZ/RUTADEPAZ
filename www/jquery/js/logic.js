@@ -24,7 +24,9 @@ $(function(){
 				    /* Do something with data */
 				    logic.data = data;
 					logic.crearPregunta();/* Will alert Hello, world! */ 
-				  }
+				  },error: function (request, status, error) {
+				        alert(request.responseText);
+				    }
 				});
 		},
 		crearPregunta:function(){
