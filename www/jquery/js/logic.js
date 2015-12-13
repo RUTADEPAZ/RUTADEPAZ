@@ -10,8 +10,12 @@ $(function(){
 				logic.data = data;
 				logic.crearPregunta();
 			});
+
+
 */
 			$("#preguntas").html("Cargando..");
+			$.support.cors = true
+			$.mobile.allowCrossDomainPages = true
 			$.ajax({
 				  url: "http://www.danielgranados.net/ruta/test.json",
 				  dataType: "jsonp",
