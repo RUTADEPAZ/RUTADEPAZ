@@ -7,7 +7,7 @@ $(function(){
 		cargarPreguntas:function(){
 			var url = "http://www.danielgranados.net/ruta/test.json";
 			$("#preguntas").html("Cargando..");
-			$.get(url,function(data){
+			$.getJSON(url,function(data){
 				logic.data = data;
 				logic.crearPregunta();
 			});
