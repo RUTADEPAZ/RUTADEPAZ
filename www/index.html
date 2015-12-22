@@ -45,6 +45,41 @@
         -webkit-align-items: center;
         align-items: center;
     }
+	
+		.texto1 {
+	position: absolute;
+	color: #FFF;
+	font-size: 1.2rem;
+	text-align: center;
+	width: 60vw;
+	left: 50vw;
+	margin-left: -30vw;
+	top: 68vh;
+	margin-top: -12vh;
+	font-family: "Futura Bk BT";
+		}
+		
+		.texto2 {
+	position: absolute;
+	font-size: 5vw;
+	text-align: center;
+	width: 100vw;
+	left: 59vw;
+	margin-left: -51vw;
+	top: 20vh;
+	margin-top: -15vh;
+	font-family: "Futura Bk BT";
+		}
+		
+	.titulo1 {
+	font-family: "Chaparral Pro";
+	font-weight: bold;
+		}
+		
+		#globo {
+	display: table-cell; vertical-align: middle;
+		}
+		
     </style>
 </head>
 <body>
@@ -53,8 +88,28 @@
         <div class="swiper-wrapper">
             <div class="swiper-slide"><img src="img/01.jpg" width="100%">
           </div>
-            <div class="swiper-slide"><img src="img/02.jpg" width="100%" ></div>
-            <div class="swiper-slide"><img src="img/03.jpg" width="100%" ></div>
+            <div class="swiper-slide"><img src="img/02.jpg" width="100%" >
+           	  <div class="texto1">
+                	Hacia un nuevo campo</br>
+					colombiano</br>
+					Reforma Rural Integral (RRI)</br>
+            	</div>
+          </div>
+            <div class="swiper-slide"><img src="img/03.svg" width="100%" >
+            <div id="globo"><img src="img/globo1.svg" style="width: 90%; margin-left: 0%; position:absolute; left:10vw; top:1vh"></div>
+           	  <div class="texto2">
+                	<p class="titulo1">INTRODUCCION</p>
+                  Los acuerdos construidos en </br>
+                  el punto de Política de Desarrollo </br> 
+                  Rural Integral se han denominado  </br> 
+                  "Hacia un nuevo campo colombiano, </br> 
+                  Reforma Rural Integral -RRI-". Estos </br> 
+                  se acordaron en aproximadamente </br> 
+                  7 meses de conversaciones en </br> 
+                  La Habana, Cuba. Veamos en </br>
+                  que consisten.
+              </div>               
+            </div>
             <div class="swiper-slide"><img src="img/04.jpg" width="100%" ></div>
             <div class="swiper-slide"><img src="img/05.jpg" width="100%" ></div>
            <div class="swiper-slide"><a href="02.html" data-transition="slide"><img src="img/06.jpg" width="100%" ></a></div>
