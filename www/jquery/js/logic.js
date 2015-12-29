@@ -75,12 +75,15 @@ $(function(){
 			$('.options').listview('refresh');
 		},
 		appendOption:function(option, questionHtmlE){
-			var t = document.querySelector('#tmp_option');
-			t.content.querySelector('a').textContent = option.texto;
-			t.content.querySelector('a').setAttribute("data-feedback", option.feedback);
-			t.content.querySelector('a').setAttribute("data-option", option.opcion);
-			t.content.querySelector('a').setAttribute("data-correcta", option.correcta);
-			questionHtmlE.querySelector('.options').appendChild(document.importNode(t.content, true))
+			//var t = document.querySelector('#tmp_option');
+
+			var e = $('<li><a href="javascript:void(1)" data-transition="slide" onclick="logic.response(this)" data-option="{}" data-feedback="feedback">Página dos</a></li>');
+			t = e[0]
+			t.querySelector('a').textContent = option.texto;
+			t.querySelector('a').setAttribute("data-feedback", option.feedback);
+			t.querySelector('a').setAttribute("data-option", option.opcion);
+			t.querySelector('a').setAttribute("data-correcta", option.correcta);
+			questionHtmlE.querySelector('.options').appendChild(t)
 		},
 		response:function(optionHtmlE){
 
