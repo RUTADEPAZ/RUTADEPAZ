@@ -14,80 +14,33 @@
     
 <style>
 
-/* Smartphones (portrait & landscape) */
-@media only screen 
-and (min-device-width : 320px) 
-and (max-device-width : 480px) {
-	
-		.textosbtn{ font-size:18px}
+@media only screen and (max-width: 768px) {
+    .textosbtn{ font-size:18px}
 		#txtpregunta{ font-size:18px}
 		.pregunta{ font-size:18px}
 		h4{ font-size: 20px;}
-		.btnsrespuestas{margin-top:50vh}
 		
-.respuestabien{background-color:#FDF38B; background-image:url(../img/bgcorrecta.svg); background-repeat: no-repeat; background-size: 100%;}	
-
-.respuestamal{background-color:#FDF38B; background-image:url(../img/bgincorrecta.svg); background-repeat: no-repeat; background-size: 100%;}	
+		.respuestabien{background-color:#FDF38B; background-image:url(../img/bgcorrecta.svg); background-repeat: no-repeat; background-size: 100%;}	
 }
- 
- 
-/* iPads (portrait & landscape) */
-@media only screen 
-and (min-device-width : 768px) 
-and (max-device-width : 1024px) {
 
+
+	@media only screen and (min-width: 768px) {
 		.textosbtn{ font-size:30px}
 		#txtpregunta{ font-size:30px}
+		.respuestas{ font-size:30px}
 		.pregunta{ font-size:30px}
 		h4{ font-size: 40px;}
-		.btnsrespuestas{margin-top:50vh}
 		
-.respuestabien{background-color:#FDF38B; background-image:url(../img/bgcorrecta.svg); background-repeat: no-repeat; background-size: 80%;}	
-
-.respuestamal{background-color:#FDF38B; background-image:url(../img/bgincorrecta.svg); background-repeat: no-repeat; background-size: 80%;}
-}
- 
- 
- 
-/* Pantallas grandes */
-@media only screen 
-and (min-width : 1824px) {
-}
- 
- 
-/* iPhone 4 */
-@media only screen 
-and (min-device-width : 320px) 
-and (max-device-width : 480px) {
+		.respuestabien{background-color:#FDF38B; background-image:url(../img/bgcorrecta.svg); background-repeat: no-repeat; background-size: 90%;}	
 	
-		.textosbtn{ font-size:18px}
-		#txtpregunta{ font-size:18px}
-		.pregunta{ font-size:18px}
-		h4{ font-size: 20px;}
-		.btnsrespuestas{margin-top:35vh}
-		
-.respuestabien{background-color:#FDF38B; background-image:url(../img/bgcorrecta.svg); background-repeat: no-repeat; background-size: 100%;}	
+  }
 
-.respuestamal{background-color:#FDF38B; background-image:url(../img/bgincorrecta.svg); background-repeat: no-repeat; background-size: 100%;}	
-}
-
-/* iPhone 6 */
-@media only screen 
-and (min-device-width : 375px) 
-and (max-device-width : 667px) { 
-
-		.textosbtn{ font-size:18px}
-		#txtpregunta{ font-size:18px}
-		.pregunta{ font-size:18px}
-		h4{ font-size: 20px;}
-		.btnsrespuestas{margin-top:45vh}
-		
-.respuestabien{background-color:#FDF38B; background-image:url(../img/bgcorrecta.svg); background-repeat: no-repeat; background-size: 100%;}	
-
-.respuestamal{background-color:#FDF38B; background-image:url(../img/bgincorrecta.svg); background-repeat: no-repeat; background-size: 100%;}	
-}
-
-
+        table { width:100%; border-spacing: 0; }
+        th { text-align:left; }
+        th h3 { margin:.6em 0 .6em .5em; }
+        th, td { vertical-align:top; border-top:1px solid #eee; padding: 1px 3px; background-color:#fcfcfc; }
+        td .ui-btn { margin:.4em 0 .5em 0; }
+        td .ui-btn-inner { padding: .4em 15px; }
     </style>
 
 <style>
@@ -158,7 +111,15 @@ text-align: center;
         -webkit-align-items: center;
         align-items: center;
 }
+
+#btnspreguntas{
+	margin-top:80%;
+	padding:90%;
+	
+	}
 		
+
+
     </style>
 
 </head>
@@ -198,7 +159,7 @@ text-align: center;
 			<div> </div>
 		</div>
         
-<div align="center" class="btnsrespuestas"><img src="../img/btnsiguiente.svg" alt="" href="javascript:void(1)" onClick="location.href='../index.html'" width="60%"/></div>
+<div align="center" style="margin-top:50vh"><img src="../img/btnsiguiente.svg" alt="" href="javascript:void(1)" onClick="location.href='../index.html'" width="60%"/></div>
 
 </div>
 
@@ -206,7 +167,7 @@ text-align: center;
 
 
 
-<div data-role="page" id="respuestamal" class="respuestamal"style="background-color:#6F6F6E">
+<div data-role="page" id="respuestamal" style="background-color:#6F6F6E">
 
 <div data-role="content">
 
@@ -215,7 +176,7 @@ text-align: center;
 		<p id="txtpregunta" align="center">Colocar aquí va el contenido de retroalimentación de las respuestass Correctas del servidor</p>
 			<div> </div>
 		</div>
-<div align="center" class="btnsrespuestas"><img src="../img/btnatras.svg" alt="" href="javascript:void(1)" data-rel="back" onClick="location.href='#page'" width="60%"/></div>
+
 
 </div>
 

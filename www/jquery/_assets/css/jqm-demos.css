@@ -483,10 +483,10 @@
 .jqm-view-source .ui-btn.ui-btn-c:hover,
 .jqm-view-source .ui-btn.ui-btn-c:active,
 .jqm-view-source .ui-btn.ui-btn-c.ui-btn-active {
-	background: #005aff;
-	border-color: #0033cc;
+	background: #DCF00D;
+	border-color: #DCF00D;
 	color: #fff;
-	text-shadow: 0 1px 0 #0033cc;
+	text-shadow: 0 1px 0 #DCF00D;
 }
 /* Button D - PHP */
 .jqm-view-source .ui-btn.ui-btn-d,
