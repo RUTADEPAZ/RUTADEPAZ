@@ -46,6 +46,24 @@
         align-items: center;
     }
     </style>
+    
+    <script type="text/javascript" charset="utf-8">
+
+//Esperamos que Cordova (PhoneGap) esté cargado
+
+document.addEventListener("deviceready", IniciarAplicacion, false);
+
+// IniciarAplicacion es la funcion que manejadora del evento deviceready
+
+function IniciarAplicacion(){
+
+var informacion="Tu SO es: " + device.platform + " Version: " + device.version;
+
+alert(informacion);
+
+}
+
+</script>
 </head>
 <body>
     <!-- Swiper -->
