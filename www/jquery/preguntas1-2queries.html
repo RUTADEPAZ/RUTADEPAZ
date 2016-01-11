@@ -12,7 +12,27 @@
 	<script src="js/jquery.mobile-1.4.5.min.js"></script>
     <script src="https://hammerjs.github.io/dist/hammer.js"></script>
     
-    
+ <script>
+ 
+ var devicePlatform = device.platform;
+ alert(devicePlatform);
+
+
+if devicePlatform.match(/BlackBerry/i)
+ {
+document.getElementsByClassName("textosbtn").style.fontSize = 90px;
+document.getElementById("txtpregunta").style.fontSize = 90px;
+document.getElementsByClassName("pregunta").style.fontSize = 90px;
+document.getElementById("h4").style.fontSize = 90px;
+document.getElementsByClassName("btnsrespuestas").style.fontSize = 90px; 
+
+}
+else
+{
+
+}
+ 
+ </script>
     
     
     
@@ -74,10 +94,10 @@ and (orientation : portrait) {
 @media only screen 
 and (min-device-width : 768px) 
 and (max-device-width : 1024px)  { 
-		.textosbtn{ font-size:30px}
-		#txtpregunta{ font-size:30px}
-		.pregunta{ font-size:30px}
-		h4{ font-size: 32px;	}
+		.textosbtn{ font-size:28px}
+		#txtpregunta{ font-size:28px}
+		.pregunta{ font-size:28px}
+		h4{ font-size: 30px;	}
 		.btnsrespuestas{margin-top:40vh}
 		
 .respuestabien{background-color:#FDF38B; background-image:url(../img/bgcorrecta.svg); background-repeat: no-repeat; background-size: 85%;}	
@@ -129,18 +149,6 @@ and (orientation : portrait) {
 
 .respuestamal{background-color:#FDF38B; background-image:url(../img/bgincorrecta.svg); background-repeat: no-repeat; background-size: 100%;}		
 	}
-	
-	@media only screen and (max-width: 400px) and (orientation : portrait) {
-		.textosbtn{ font-size:20px}
-		#txtpregunta{ font-size:20px}
-		.pregunta{ font-size:20px}
-		h4{ font-size: 22px;	}
-		.btnsrespuestas{margin-top:40vh}
-		
-.respuestabien{background-color:#FDF38B; background-image:url(../img/bgcorrecta.svg); background-repeat: no-repeat; background-size: 100%;}	
-
-.respuestamal{background-color:#FDF38B; background-image:url(../img/bgincorrecta.svg); background-repeat: no-repeat; background-size: 100%;}	
-}	 
 
 </style>
 
