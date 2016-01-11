@@ -12,111 +12,128 @@
 	<script src="js/jquery.mobile-1.4.5.min.js"></script>
     <script src="https://hammerjs.github.io/dist/hammer.js"></script>
     
+    
+    
+    
+    
 <style>
 
-<style>
-
-@media only screen 
-and (min-device-width : 0px) 
-and (max-device-width : 320px) {
-    	.textosbtn{ font-size:14px}
+@media only screen and (-webkit-min-device-pixel-ratio : 1.5), only screen and (min-device-pixel-ratio : 1.5)  { 
+		.textosbtn{ font-size:14px}
 		#txtpregunta{ font-size:14px}
 		.pregunta{ font-size:14px}
-		h4{ font-size: 16px;}
-		.btnsrespuestas{margin-top:75%}
+		h4{ font-size: 16px;	}
+		.btnsrespuestas{margin-top:50vh}
 		
 .respuestabien{background-color:#FDF38B; background-image:url(../img/bgcorrecta.svg); background-repeat: no-repeat; background-size: 100%;}	
 
-.respuestamal{background-color:#FDF38B; background-image:url(../img/bgincorrecta.svg); background-repeat: no-repeat; background-size: 100%;}
+.respuestamal{background-color:#FDF38B; background-image:url(../img/bgincorrecta.svg); background-repeat: no-repeat; background-size: 100%;}	
 }
 
-@media only screen 
-and (min-device-width : 321px) 
-and (max-device-width : 384px) {
-    	.textosbtn{ font-size:16px}
-		#txtpregunta{ font-size:16px}
-		.pregunta{ font-size:16px}
-		h4{ font-size: 18px;}
-		.btnsrespuestas{margin-top:80%}
+@media screen and (device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2) { 
+		.textosbtn{ font-size:14px}
+		#txtpregunta{ font-size:14px}
+		.pregunta{ font-size:14px}
+		h4{ font-size: 16px;	}
+		.btnsrespuestas{margin-top:50vh}
 		
 .respuestabien{background-color:#FDF38B; background-image:url(../img/bgcorrecta.svg); background-repeat: no-repeat; background-size: 100%;}	
 
-.respuestamal{background-color:#FDF38B; background-image:url(../img/bgincorrecta.svg); background-repeat: no-repeat; background-size: 100%;}
+.respuestamal{background-color:#FDF38B; background-image:url(../img/bgincorrecta.svg); background-repeat: no-repeat; background-size: 100%;}	
 }
 
-@media only screen 
-and (min-device-width : 385px) 
-and (max-device-width : 420px) {
-    	.textosbtn{ font-size:18px}
-		#txtpregunta{ font-size:18px}
-		.pregunta{ font-size:18px}
-		h4{ font-size: 20px;}
-		.btnsrespuestas{margin-top:80%}
+
+@media only screen and (-webkit-device-pixel-ratio: 2) {
+		.textosbtn{ font-size:14px}
+		#txtpregunta{ font-size:14px}
+		.pregunta{ font-size:14px}
+		h4{ font-size: 16px;	}
+		.btnsrespuestas{margin-top:50vh}
 		
 .respuestabien{background-color:#FDF38B; background-image:url(../img/bgcorrecta.svg); background-repeat: no-repeat; background-size: 100%;}	
 
-.respuestamal{background-color:#FDF38B; background-image:url(../img/bgincorrecta.svg); background-repeat: no-repeat; background-size: 100%;}
+.respuestamal{background-color:#FDF38B; background-image:url(../img/bgincorrecta.svg); background-repeat: no-repeat; background-size: 100%;}	
 }
 
+
 @media only screen 
-and (min-device-width : 420px) 
-and (max-device-width : 600px) {
-    	.textosbtn{ font-size:28px}
-		#txtpregunta{ font-size:28px}
-		.pregunta{ font-size:28px}
-		h4{ font-size: 30px;}
-		.btnsrespuestas{margin-top:80%}
+and (min-device-width : 375px) 
+and (max-device-width : 667px) 
+and (orientation : portrait) { 
+		.textosbtn{ font-size:20px}
+		#txtpregunta{ font-size:20px}
+		.pregunta{ font-size:20px}
+		h4{ font-size: 22px;	}
+		.btnsrespuestas{margin-top:50vh}
 		
 .respuestabien{background-color:#FDF38B; background-image:url(../img/bgcorrecta.svg); background-repeat: no-repeat; background-size: 100%;}	
 
-.respuestamal{background-color:#FDF38B; background-image:url(../img/bgincorrecta.svg); background-repeat: no-repeat; background-size: 100%;}
+.respuestamal{background-color:#FDF38B; background-image:url(../img/bgincorrecta.svg); background-repeat: no-repeat; background-size: 100%;}	
 }
 
 @media only screen 
-and (min-device-width : 601px) 
-and (max-device-width : 780px) {
-    	.textosbtn{ font-size:35px}
-		#txtpregunta{ font-size:35px}
-		.pregunta{ font-size:35px}
-		h4{ font-size: 37px;}
-		.btnsrespuestas{margin-top:60%}
+and (min-device-width : 768px) 
+and (max-device-width : 1024px)  { 
+		.textosbtn{ font-size:30px}
+		#txtpregunta{ font-size:30px}
+		.pregunta{ font-size:30px}
+		h4{ font-size: 32px;	}
+		.btnsrespuestas{margin-top:40vh}
 		
 .respuestabien{background-color:#FDF38B; background-image:url(../img/bgcorrecta.svg); background-repeat: no-repeat; background-size: 85%;}	
 
-.respuestamal{background-color:#FDF38B; background-image:url(../img/bgincorrecta.svg); background-repeat: no-repeat; background-size: 85%;}
+.respuestamal{background-color:#FDF38B; background-image:url(../img/bgincorrecta.svg); background-repeat: no-repeat; background-size: 85%;}	
 }
 
 @media only screen 
-and (min-device-width : 781px) 
-and (max-device-width : 800px) {
-    	.textosbtn{ font-size:35px}
-		#txtpregunta{ font-size:35px}
-		.pregunta{ font-size:35px}
-		h4{ font-size: 37px;}
-		.btnsrespuestas{margin-top:83%}
+and (min-device-width : 414px) 
+and (max-device-width : 736px) 
+and (orientation : portrait) {
+		.textosbtn{ font-size:20px}
+		#txtpregunta{ font-size:20px}
+		.pregunta{ font-size:20px}
+		h4{ font-size: 22px;	}
+		.btnsrespuestas{margin-top:50vh}
 		
 .respuestabien{background-color:#FDF38B; background-image:url(../img/bgcorrecta.svg); background-repeat: no-repeat; background-size: 100%;}	
 
-.respuestamal{background-color:#FDF38B; background-image:url(../img/bgincorrecta.svg); background-repeat: no-repeat; background-size: 100%;}
-}
-
+.respuestamal{background-color:#FDF38B; background-image:url(../img/bgincorrecta.svg); background-repeat: no-repeat; background-size: 100%;}	
+	 }
+	 
 @media only screen 
-and (min-device-width : 801px) 
-and (max-device-width : 2000px) {
-    	.textosbtn{ font-size:30px}
-		#txtpregunta{ font-size:30px}
-		.pregunta{ font-size:30px}
-		h4{ font-size: 32px;}
-		.btnsrespuestas{margin-top:10%}
+and (min-device-width : 375px) 
+and (max-device-width : 627px) 
+and (orientation : portrait) {
+		.textosbtn{ font-size:16px}
+		#txtpregunta{ font-size:16px}
+		.pregunta{ font-size:16px}
+		h4{ font-size: 18px;	}
+		.btnsrespuestas{margin-top:50vh}
 		
 .respuestabien{background-color:#FDF38B; background-image:url(../img/bgcorrecta.svg); background-repeat: no-repeat; background-size: 100%;}	
 
-.respuestamal{background-color:#FDF38B; background-image:url(../img/bgincorrecta.svg); background-repeat: no-repeat; background-size: 100%;}
-}
+.respuestamal{background-color:#FDF38B; background-image:url(../img/bgincorrecta.svg); background-repeat: no-repeat; background-size: 100%;}		
+	}	 
+	
+	@media only screen 
+and (min-device-width : 600px) 
+and (max-device-width : 1024px) 
+and (orientation : portrait) {
+		.textosbtn{ font-size:34px}
+		#txtpregunta{ font-size:34px}
+		.pregunta{ font-size:34px}
+		h4{ font-size: 36px;	}
+		.btnsrespuestas{margin-top:45vh}
+		
+.respuestabien{background-color:#FDF38B; background-image:url(../img/bgcorrecta.svg); background-repeat: no-repeat; background-size: 100%;}	
 
-
+.respuestamal{background-color:#FDF38B; background-image:url(../img/bgincorrecta.svg); background-repeat: no-repeat; background-size: 100%;}		
+	}	 
 
 </style>
+
+
+
 
 <style>
 
