@@ -239,54 +239,8 @@ text-align: center;
 }
 		
     </style>
-
-<script>
-$(function(){
-
-var isMobile = {
-    Android: function() {
-        return navigator.userAgent.match(/Android/i);
-    },
-    BlackBerry: function() {
-        return navigator.userAgent.match(/BB10; Touch/)
-    },
-    iOS: function() {
-        return navigator.userAgent.match(/iPhone|iPad|iPod/i);
-    },
-    Opera: function() {
-        return navigator.userAgent.match(/Opera Mini/i);
-    },
-    Windows: function() {
-        return navigator.userAgent.match(/IEMobile/i);
-    },
- };
-
- if (isMobile.Android())
- {
- alert("Android");
- }
- else if (isMobile.BlackBerry())
- {
- alert("BlackBerry");
- }
- else if (isMobile.iOS())
- {
- alert("Iphone");
- }
- else if (isMobile.Opera())
- {
- alert("Opera");
- }
- else if (isMobile.Windows())
- {
- alert("IEMobile");
- }
- else
- {
- alert("Default");
- }
-});
-</script>
+    
+  
 
 </head>
 <body onLoad="onLoad()">
@@ -300,14 +254,34 @@ var isMobile = {
 			<div> </div>
 		</div>
 
-  	<a data-role="button" href="#respuestamal" data-transition="flip" style="white-space: normal; margin-bottom:1em; border: 0.3em solid #61C5C3; border-radius: 8px; background-color:#FFFFFF"><div class="textosbtn">Contenidos de Boton opciones y respuestas 1 (incorrecta)</div></a>
+  	<a data-role="button" id="textosbtn" href="#respuestamal" data-transition="flip" style="white-space: normal; margin-bottom:1em; border: 0.3em solid #61C5C3; border-radius: 8px; background-color:#FFFFFF"><div class="textosbtn">Contenidos de Boton opciones y respuestas 1 (incorrecta)</div></a>
     
-    <a data-role="button" href="#respuestamal" data-transition="flip" style="white-space: normal; margin-bottom:1em; border: 0.3em solid #61C5C3; border-radius: 8px; background-color:#FFFFFF"><div class="textosbtn">Contenidos de Boton opciones y respuestas 2 (incorrecta)</div></a>
+    <a data-role="button" id="textosbtn" href="#respuestamal" data-transition="flip" style="white-space: normal; margin-bottom:1em; border: 0.3em solid #61C5C3; border-radius: 8px; background-color:#FFFFFF"><div class="textosbtn">Contenidos de Boton opciones y respuestas 2 (incorrecta)</div></a>
     
-    <a data-role="button" href="#respuestamal" data-transition="flip" style="white-space: normal; margin-bottom:1em; border: 0.3em solid #61C5C3; border-radius: 8px; background-color:#FFFFFF"><div class="textosbtn">Contenidos de Boton opciones y respuestas 3 (incorrecta)</div></a>
+    <a data-role="button" id="textosbtn" href="#respuestamal" data-transition="flip" style="white-space: normal; margin-bottom:1em; border: 0.3em solid #61C5C3; border-radius: 8px; background-color:#FFFFFF"><div class="textosbtn">Contenidos de Boton opciones y respuestas 3 (incorrecta)</div></a>
     
-    <a data-role="button" href="#respuestabien" data-transition="flip" style="white-space: normal; margin-bottom:1em; border: 0.3em solid #61C5C3; border-radius: 8px; background-color:#FFFFFF"><div class="textosbtn">Contenidos de Boton opciones y respuestas 4 (correcta)</div></a>
+    <a data-role="button" id="textosbtn" href="#respuestabien" data-transition="flip" style="white-space: normal; margin-bottom:1em; border: 0.3em solid #61C5C3; border-radius: 8px; background-color:#FFFFFF"><div class="textosbtn">Contenidos de Boton opciones y respuestas 4 (correcta)</div></a>
+    
+    <script>
+var x = navigator.userAgent;
 
+// alert (x);
+if(x=="Mozilla/5.0 (Linux; U; Android 4.3; es-es; Z10 Build/10.3.2.231) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30"){
+
+//alert ("si");
+var x = document.getElementsByClassName("textosbtn");
+var i;
+for (i = 0; i < x.length; i++) {
+    x[i].style.fontSize = '18px';
+}
+	
+document.getElementById('txtpregunta').style.fontSize = "18px";
+document.getElementById('Columntogglebasics').style.fontSize = "20px";
+
+
+}
+</script>
+    
 </div>
 
     
@@ -344,9 +318,12 @@ var isMobile = {
 		</div>
 <div align="center" class="btnsrespuestas"><img src="../img/btnatras.svg" alt="" href="javascript:void(1)" data-rel="back" onClick="location.href='#page'" width="60%"/></div>
 
+
 </div>
 
     </div>
+    
+    
     
 
 </body>
