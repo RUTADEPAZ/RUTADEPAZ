@@ -249,21 +249,20 @@ text-align: center;
 <div data-role="content">
 
 <div id="ui-body-test" class="ui-body ui-body-a ui-corner-all" style="margin-bottom:2em; border-bottom: 0.5em solid #FCEA6B; border-radius:  25px;">
-		<h4 id="Columntogglebasics" style="color:#FF0004;" align="center">PREGUNTA</h4>
+		<h4 id="Columntogglebasics" class="Columntogglebasics" style="color:#FF0004;" align="center">PREGUNTA</h4>
 		<p id="txtpregunta" align="center">Colocar aquí el contenido de la pregunta traida del servidor Colocar aquí el contenido de la pregunta traida del servidor</p>
 			<div> </div>
 		</div>
 
-  	<a data-role="button" id="textosbtn" href="#respuestamal" data-transition="flip" style="white-space: normal; margin-bottom:1em; border: 0.3em solid #61C5C3; border-radius: 8px; background-color:#FFFFFF"><div class="textosbtn">Contenidos de Boton opciones y respuestas 1 (incorrecta)</div></a>
+  	<a data-role="button"  href="#respuestamal" data-transition="flip" style="white-space: normal; margin-bottom:1em; border: 0.3em solid #61C5C3; border-radius: 8px; background-color:#FFFFFF"><div class="textosbtn">Contenidos de Boton opciones y respuestas 1 (incorrecta)</div></a>
     
-    <a data-role="button" id="textosbtn" href="#respuestamal" data-transition="flip" style="white-space: normal; margin-bottom:1em; border: 0.3em solid #61C5C3; border-radius: 8px; background-color:#FFFFFF"><div class="textosbtn">Contenidos de Boton opciones y respuestas 2 (incorrecta)</div></a>
+    <a data-role="button"  href="#respuestamal" data-transition="flip" style="white-space: normal; margin-bottom:1em; border: 0.3em solid #61C5C3; border-radius: 8px; background-color:#FFFFFF"><div class="textosbtn">Contenidos de Boton opciones y respuestas 2 (incorrecta)</div></a>
     
-    <a data-role="button" id="textosbtn" href="#respuestamal" data-transition="flip" style="white-space: normal; margin-bottom:1em; border: 0.3em solid #61C5C3; border-radius: 8px; background-color:#FFFFFF"><div class="textosbtn">Contenidos de Boton opciones y respuestas 3 (incorrecta)</div></a>
+    <a data-role="button"  href="#respuestamal" data-transition="flip" style="white-space: normal; margin-bottom:1em; border: 0.3em solid #61C5C3; border-radius: 8px; background-color:#FFFFFF"><div class="textosbtn">Contenidos de Boton opciones y respuestas 3 (incorrecta)</div></a>
     
-    <a data-role="button" id="textosbtn" href="#respuestabien" data-transition="flip" style="white-space: normal; margin-bottom:1em; border: 0.3em solid #61C5C3; border-radius: 8px; background-color:#FFFFFF"><div class="textosbtn">Contenidos de Boton opciones y respuestas 4 (correcta)</div></a>
+    <a data-role="button"  href="#respuestabien" data-transition="flip" style="white-space: normal; margin-bottom:1em; border: 0.3em solid #61C5C3; border-radius: 8px; background-color:#FFFFFF"><div class="textosbtn">Contenidos de Boton opciones y respuestas 4 (correcta)</div></a>
     
-   
-    
+
 </div>
 
     
@@ -272,12 +271,12 @@ text-align: center;
 
 
 <div data-role="page" id="respuestabien" class="respuestabien">
-
+   
 <div data-role="content">
 
-<div id="ui-body-test" class="ui-body ui-body-a ui-corner-all" style="margin-bottom:2em; border-bottom: 0.5em solid #75D1B0; border-radius:  25px;">
-		<h4 id="Columntogglebasics" style="color:#000000;" align="center">!FELICITACIONES!</h4>
-		<p id="txtpregunta" align="center">Colocar aquí va el contenido de retroalimentación de las respuestass Incorrectas del servidor</p>
+<div  class="ui-body ui-body-a ui-corner-all" style="margin-bottom:2em; border-bottom: 0.5em solid #75D1B0; border-radius:  25px;">
+		<h4 class="Columntogglebasics" style="color:#000000;" align="center">!FELICITACIONES!</h4>
+		<p align="center" class="pregunta">Colocar aquí va el contenido de retroalimentación de las respuestass Incorrectas del servidor</p>
 			<div> </div>
 		</div>
         
@@ -289,13 +288,13 @@ text-align: center;
 
 
 
-<div data-role="page" id="respuestamal" class="respuestamal"style="background-color:#6F6F6E">
+<div data-role="page" id="respuestamal" class="respuestamal" style="background-color:#6F6F6E">
 
 <div data-role="content">
 
-<div id="ui-body-test" class="ui-body ui-body-a ui-corner-all" style="margin-bottom:2em; border-bottom: 0.5em solid #75D1B0; border-radius:  25px;">
-		<h4 id="Columntogglebasics" style="color:#000000;" align="center">!RESPUESTA INCORRECTA!</h4>
-		<p id="txtpregunta" align="center">Colocar aquí va el contenido de retroalimentación de las respuestass Correctas del servidor</p>
+<div class="ui-body ui-body-a ui-corner-all" style="margin-bottom:2em; border-bottom: 0.5em solid #75D1B0; border-radius:  25px;">
+		<h4 class="Columntogglebasics" style="color:#000000;" align="center">!RESPUESTA INCORRECTA!</h4>
+		<p align="center" class="pregunta">Colocar aquí va el contenido de retroalimentación de las respuestass Correctas del servidor</p>
 			<div> </div>
 		</div>
 <div align="center" class="btnsrespuestas"><img src="../img/btnatras.svg" alt="" href="javascript:void(1)" data-rel="back" onClick="location.href='#page'" width="60%"/></div>
@@ -321,6 +320,17 @@ for (i = 0; i < x.length; i++) {
 document.getElementById('txtpregunta').style.fontSize = "18px";
 document.getElementById('Columntogglebasics').style.fontSize = "20px";
 
+var y = document.getElementsByClassName("pregunta");
+var i;
+for (i = 0; i < x.length; i++) {
+    y[i].style.fontSize = '18px';
+}
+
+var y = document.getElementsByClassName("Columntogglebasics");
+var i;
+for (i = 0; i < x.length; i++) {
+    y[i].style.fontSize = '20px';
+}
 
 }
 </script> 
