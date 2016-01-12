@@ -3,6 +3,22 @@
 <head>
     <meta charset="utf-8">
     <title>Swiper demo</title>
+    
+    <script type="text/javascript" charset="utf-8" src="cordova.js"></script>
+    <script type="text/javascript" charset="utf-8">
+
+    // Wait for device API libraries to load
+    //
+    document.addEventListener("deviceready", onDeviceReady, false);
+
+    // device APIs are available
+    //
+    function onDeviceReady() {
+        alert(device.model);
+    }
+
+    </script>
+    
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
 
     <!-- Link Swiper's CSS -->
@@ -60,7 +76,7 @@
     }
     </style>
 </head>
-<body>
+<body onLoad="onLoad()">
     <!-- Swiper -->
     <div class="swiper-container swiper2">
         <div class="swiper-wrapper">

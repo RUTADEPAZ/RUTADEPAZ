@@ -4,6 +4,30 @@
 	<meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
 	<title>Transitions - jQuery Mobile Demos</title>
+    
+  <script type="text/javascript" charset="utf-8" src="cordova.js"></script>
+    <script type="text/javascript" charset="utf-8">
+
+    // Wait for device API libraries to load
+    //
+    document.addEventListener("deviceready", onDeviceReady, false);
+
+    // device APIs are available
+    //
+    function onDeviceReady() {
+        alert(device.model);
+    }
+
+    </script>
+    
+    
+<!--document.getElementsByClassName("textosbtn").style.fontSize = 90px;
+document.getElementById("txtpregunta").style.fontSize = 90px;
+document.getElementsByClassName("pregunta").style.fontSize = 90px;
+document.getElementById("h4").style.fontSize = 90px;
+document.getElementsByClassName("btnsrespuestas").style.fontSize = 90px; -->
+
+    
     <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,700">
 	<link rel="stylesheet" href="css/themes/default/jquery.mobile-1.4.5.min.css">
 	<link rel="stylesheet" href="_assets/css/jqm-demos.css">
@@ -12,31 +36,21 @@
 	<script src="js/jquery.mobile-1.4.5.min.js"></script>
     <script src="https://hammerjs.github.io/dist/hammer.js"></script>
     
- <script>
- 
- var devicePlatform = device.platform;
- alert(devicePlatform);
-
-
-if devicePlatform.match(/BlackBerry/i)
- {
-document.getElementsByClassName("textosbtn").style.fontSize = 90px;
-document.getElementById("txtpregunta").style.fontSize = 90px;
-document.getElementsByClassName("pregunta").style.fontSize = 90px;
-document.getElementById("h4").style.fontSize = 90px;
-document.getElementsByClassName("btnsrespuestas").style.fontSize = 90px; 
-
-}
-else
-{
-
-}
- 
- </script>
-    
     
     
 <style>
+
+@media (-webkit-min-device-aspect-ratio: 2) {
+.textosbtn{ font-size:18px}
+		#txtpregunta{ font-size:18px}
+		.pregunta{ font-size:18px}
+		h4{ font-size: 20px;	}
+		.btnsrespuestas{margin-top:40vh}
+		
+.respuestabien{background-color:#FDF38B; background-image:url(../img/bgcorrecta.svg); background-repeat: no-repeat; background-size: 100%;}	
+
+.respuestamal{background-color:#FDF38B; background-image:url(../img/bgincorrecta.svg); background-repeat: no-repeat; background-size: 100%;}	
+}
 
 @media only screen and (-webkit-min-device-pixel-ratio : 1.5), only screen and (min-device-pixel-ratio : 1.5)  { 
 		.textosbtn{ font-size:14px}
@@ -226,8 +240,56 @@ text-align: center;
 		
     </style>
 
+<script>
+$(function(){
+
+var isMobile = {
+    Android: function() {
+        return navigator.userAgent.match(/Android/i);
+    },
+    BlackBerry: function() {
+        return navigator.userAgent.match(/BB10; Touch/)
+    },
+    iOS: function() {
+        return navigator.userAgent.match(/iPhone|iPad|iPod/i);
+    },
+    Opera: function() {
+        return navigator.userAgent.match(/Opera Mini/i);
+    },
+    Windows: function() {
+        return navigator.userAgent.match(/IEMobile/i);
+    },
+ };
+
+ if (isMobile.Android())
+ {
+ alert("Android");
+ }
+ else if (isMobile.BlackBerry())
+ {
+ alert("BlackBerry");
+ }
+ else if (isMobile.iOS())
+ {
+ alert("Iphone");
+ }
+ else if (isMobile.Opera())
+ {
+ alert("Opera");
+ }
+ else if (isMobile.Windows())
+ {
+ alert("IEMobile");
+ }
+ else
+ {
+ alert("Default");
+ }
+});
+</script>
+
 </head>
-<body>
+<body onLoad="onLoad()">
 <div data-role="page" id="page" style="background-color:#F7F7F7">
 
 <div data-role="content">

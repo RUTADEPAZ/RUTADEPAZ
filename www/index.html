@@ -2,8 +2,24 @@
 <html lang="en"><head>
     <meta charset="utf-8">
     <title>Swiper demo</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+    
+    <script type="text/javascript" charset="utf-8" src="cordova.js"></script>
+    <script type="text/javascript" charset="utf-8">
 
+    // Wait for device API libraries to load
+    //
+    document.addEventListener("deviceready", onDeviceReady, false);
+
+    // device APIs are available
+    //
+    function onDeviceReady() {
+        alert(device.model);
+    }
+
+    </script>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+    
     <!-- Link Swiper's CSS -->
     <link rel="stylesheet" href="dist/css/swiper.min.css">
     <link rel="stylesheet" href="css/fontkit/stylesheet.css" type="text/css" charset="utf-8" />
@@ -46,26 +62,9 @@
         align-items: center;
     }
     </style>
-    
-    <script type="text/javascript" charset="utf-8">
-
-//Esperamos que Cordova (PhoneGap) esté cargado
-
-document.addEventListener("deviceready", IniciarAplicacion, false);
-
-// IniciarAplicacion es la funcion que manejadora del evento deviceready
-
-function IniciarAplicacion(){
-
-var informacion="Tu SO es: " + device.platform + " Version: " + device.version;
-
-alert(informacion);
-
-}
-
-</script>
 </head>
 <body>
+<p id="deviceProperties">Loading device properties...</p>
     <!-- Swiper -->
     <div class="swiper-container">
         <div class="swiper-wrapper">
